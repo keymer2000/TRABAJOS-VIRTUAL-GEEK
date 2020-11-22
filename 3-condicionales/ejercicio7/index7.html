@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular cuál va a ser el siguiente año bisiesto
+    </title>
+</head>
+<body>
+    
+
+
+    <script>
+        var inicio = 3;
+        var final = 2020;
+        for (inicio=3; inicio <= final; inicio++) {
+            if (((inicio % 4 == 0) && (inicio % 100 != 0)) || (inicio % 400 == 0)) {
+                document.writeln(inicio + ' Es bisiesto. ');
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

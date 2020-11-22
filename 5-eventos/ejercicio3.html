@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dame ipsum</title>
+</head>
+<body>
+    
+    <p id="parrafo-1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officiis beatae ratione vitae, mollitia, deserunt dolore totam rerum laudantium, modi blanditiis saepe nemo facere ad inventore cumque voluptatem ea quas!
+    </p>
+
+    <script>
+        document.querySelector('#parrafo-1').addEventListener("mouseover", addElement);
+
+        function addElement() {
+            document.querySelector('#parrafo-1').innerHTML += `  <p id="parrafo-1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum officiis beatae ratione vitae, mollitia, deserunt dolore totam rerum laudantium, modi blanditiis saepe nemo facere ad inventore cumque voluptatem ea quas!
+            </p>`;
+        }
+    </script>
+</body>
+</html>

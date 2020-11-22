@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificaciones arcoiris</title>
+</head>
+<body>
+    <style>
+        .success{
+            border: 2px solid green;
+            background-color: rgb(163, 228, 163);
+            color: green;
+        }
+
+        .error{
+            border: 2px solid red;
+            background-color: rgb(240, 131, 131);
+            color: red;
+        }
+
+        .warning{
+            border: 2px solid rgb(255, 255, 0);
+            background-color: rgb(252, 252, 221);
+            color: yellow;
+        }
+    </style>
+
+    <div>
+    
+        <h1 class="success" >NOTIFICACIÓN</h1>
+        <p class="success" >Mensaje por defecto</p>
+
+    </div>
+
+
+
+
+    <script>
+        const activableSection = document.querySelector('h1');
+        const activableSection2 = document.querySelector('p');
+
+        if (activableSection.classList.contains('warning')) {
+            activableSection.innerHTML = 'AVISO'
+            activableSection2.innerHTML = 'Tenga cuidado'
+        }
+        if (activableSection.classList.contains('error')) {
+            activableSection.innerHTML = 'ERROR'
+            activableSection2.innerHTML = 'Ha surgido un error'
+        }
+        if (activableSection.classList.contains('success')) {
+            activableSection.innerHTML = 'CORRECTO'
+            activableSection2.innerHTML = 'Los datos son correctos'
+        } 
+   
+    </script>
+</body>
+</html>

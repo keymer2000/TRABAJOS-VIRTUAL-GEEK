@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Cómo te llamas?</title>
+</head>
+<body>
+    
+    <input placeholder="digite su nombre para recibir un saludo en la consola" style="width: 320px;" >
+    <button onclick="saludar()">Enviar</button>
+
+    <script>
+
+        function saludar (){
+            var nombre=document.querySelector("input").value;
+            console.log("hola "+nombre)
+        }
+    </script>
+</body>
+</html>

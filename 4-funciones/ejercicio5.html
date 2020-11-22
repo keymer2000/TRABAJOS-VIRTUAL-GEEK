@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions everywhere</title>
+</head>
+<body>
+<!--
+    var precio=10000
+    var iva = precio*0.21
+    
+    
+    function precio_iva(precio){
+        var precio_total=(precio+iva)
+
+
+        return "precio sin iva= " +precio+" ,  iva= "+iva+" ,  total= "+precio_total;
+    }
+
+    document.writeln(precio_iva(precio));-->
+    
+    <script>
+        var precio=10;
+        var iva=2.1;
+        var calculo=(precio) =>{
+            var acum=(precio*iva)/10+precio;
+            return "precio sin iva= " +precio+" ,  iva= "+iva+" ,  total= "+acum;
+            
+        }
+        document.writeln(calculo(precio));
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugando con el teclado</title>
+</head>
+<body id="color" onkeypress="myFunction(event)">
+    
+
+    <script >
+        function myFunction(event) {
+            var x = event.keyCode;//table asscii
+            if (x === 114) {
+                document.getElementById("color").style.backgroundColor = "red";
+
+            }
+            if (x === 109) {
+                document.getElementById("color").style.backgroundColor = "purple";
+
+            }
+            if (x === 103) {
+                document.getElementById("color").style.backgroundColor = "green";
+
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>

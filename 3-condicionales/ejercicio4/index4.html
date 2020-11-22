@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de edad de perro a humano</title>
+</head>
+<body>
+    
+
+    <script>
+        var añosPerrunos = prompt('digite los años de su perro');
+        var acumulador = 0;
+        if (añosPerrunos > 0) {
+            acumulador =acumulador+15;
+        }
+        if (añosPerrunos > 1) {
+            acumulador =acumulador+ 9
+        }
+        if (añosPerrunos > 2) {
+            acumulador+=(añosPerrunos-2)*5;
+
+        }
+        alert("los "+añosPerrunos+" años de su perro equivalen a "+acumulador+" años humanos")
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de modelo de caja</title>
+</head>
+<body>
+    
+
+    <script>
+        var tipoBorderbox=true;
+        var ancho=500;
+        var padding=20;
+        var borde=5;
+        function calcularancho(tipo,ancho,padding,borde) {
+            var acumulador=0;
+            if (tipoBorderbox===false) {
+                acumulador= ancho+padding+borde;               
+            }else {
+                acumulador=ancho;
+            }
+            return acumulador;
+            
+        }
+        document.writeln("el ancho es  "+calcularancho(tipoBorderbox,ancho,padding,borde))
+    </script>
+</body>
+</html>
